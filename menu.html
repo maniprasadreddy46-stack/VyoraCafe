@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyora Cafe - Menu</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">VYORA CAFE</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart 🛒</a></li>
+    </ul>
+</nav>
+
+<div class="menu-container">
+
+<h1>Our Menu</h1>
+
+<input type="text" class="search" placeholder="🔍 Search Food...">
+
+<!-- ================= STARTERS ================= -->
+
+<h2>🍗 Starters</h2>
+
+<div class="food-card">
+<div>
+<h3>Chicken 65</h3>
+<label><input type="radio" name="c65" checked> ₹200</label>
+</div>
+
+<div>
+<input type="number" id="qty1" value="1" min="1">
+<button onclick="addFood('Chicken 65','c65',200,200,'qty1')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Pepper Chicken</h3>
+<label><input type="radio" name="pepper" checked> ₹150</label>
+</div>
+
+<div>
+<input type="number" id="qty2" value="1" min="1">
+<button onclick="addFood('Pepper Chicken','pepper',150,150,'qty2')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Schezwan Chicken</h3>
+<label><input type="radio" name="schez" checked> ₹200</label>
+</div>
+
+<div>
+<input type="number" id="qty3" value="1" min="1">
+<button onclick="addFood('Schezwan Chicken','schez',200,200,'qty3')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Chicken Manchurian</h3>
+<label><input type="radio" name="cman" checked> ₹160</label>
+</div>
+
+<div>
+<input type="number" id="qty4" value="1" min="1">
+<button onclick="addFood('Chicken Manchurian','cman',160,160,'qty4')">Add</button>
+</div>
+</div>
+
+<!-- ================= FRIED RICE ================= -->
+
+<h2>🍚 Fried Rice</h2>
+
+<div class="food-card">
+<div>
+<h3>Chicken Fried Rice</h3>
+
+<label>
+<input type="radio" name="cfrice" value="Single" checked>
+Single ₹90
+</label>
+
+<label>
+<input type="radio" name="cfrice" value="Full">
+Full ₹130
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty5" value="1" min="1">
+<button onclick="addFood('Chicken Fried Rice','cfrice',90,130,'qty5')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Chicken Schezwan Rice</h3>
+
+<label>
+<input type="radio" name="csrice" value="Single" checked>
+Single ₹100
+</label>
+
+<label>
+<input type="radio" name="csrice" value="Full">
+Full ₹140
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty6" value="1" min="1">
+<button onclick="addFood('Chicken Schezwan Rice','csrice',100,140,'qty6')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Chicken Chilli Rice</h3>
+
+<label>
+<input type="radio" name="ccrice" value="Single" checked>
+Single ₹100
+</label>
+
+<label>
+<input type="radio" name="ccrice" value="Full">
+Full ₹140
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty7" value="1" min="1">
+<button onclick="addFood('Chicken Chilli Rice','ccrice',100,140,'qty7')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Veg Fried Rice</h3>
+
+<label>
+<input type="radio" name="vfrice" value="Single" checked>
+Single ₹70
+</label>
+
+<label>
+<input type="radio" name="vfrice" value="Full">
+Full ₹120
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty8" value="1" min="1">
+<button onclick="addFood('Veg Fried Rice','vfrice',70,120,'qty8')">Add</button>
+</div>
+</div>
+
+<!-- ================= NOODLES ================= -->
+
+<h2>🍜 Noodles</h2>
+
+<div class="food-card">
+<div>
+<h3>Chicken Noodles</h3>
+
+<label>
+<input type="radio" name="cnoodle" value="Single" checked>
+Single ₹90
+</label>
+
+<label>
+<input type="radio" name="cnoodle" value="Full">
+Full ₹130
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty9" value="1" min="1">
+<button onclick="addFood('Chicken Noodles','cnoodle',90,130,'qty9')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Chicken Schezwan Noodles</h3>
+
+<label>
+<input type="radio" name="csnoodle" value="Single" checked>
+Single ₹100
+</label>
+
+<label>
+<input type="radio" name="csnoodle" value="Full">
+Full ₹140
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty10" value="1" min="1">
+<button onclick="addFood('Chicken Schezwan Noodles','csnoodle',100,140,'qty10')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Chicken Chilli Noodles</h3>
+
+<label>
+<input type="radio" name="ccnoodle" value="Single" checked>
+Single ₹100
+</label>
+
+<label>
+<input type="radio" name="ccnoodle" value="Full">
+Full ₹140
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty11" value="1" min="1">
+<button onclick="addFood('Chicken Chilli Noodles','ccnoodle',100,140,'qty11')">Add</button>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Veg Noodles</h3>
+
+<label>
+<input type="radio" name="vnoodle" value="Single" checked>
+Single ₹70
+</label>
+
+<label>
+<input type="radio" name="vnoodle" value="Full">
+Full ₹120
+</label>
+
+</div>
+
+<div>
+<input type="number" id="qty12" value="1" min="1">
+<button onclick="addFood('Veg Noodles','vnoodle',70,120,'qty12')">Add</button>
+</div>
+</div>
+
+<!-- ================= MAGGIE ================= -->
+
+<h2>🍜 Maggie</h2>
+
+<div class="food-card">
+<div>
+<h3>Veg Maggie</h3>
+<p>Available at Cafe</p>
+</div>
+</div>
+
+<div class="food-card">
+<div>
+<h3>Chicken Maggie</h3>
+<p>Available at Cafe</p>
+</div>
+</div>
+
+</div>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>

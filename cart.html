@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyora Cafe - Cart</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">VYORA CAFE</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+</ul>
+
+</nav>
+
+<div class="menu-container">
+
+<h1>Your Cart 🛒</h1>
+
+<div id="cartItems"></div>
+
+<h2 id="total">Total : ₹0</h2>
+
+<hr><br>
+
+<h2>Customer Details</h2>
+
+<input type="text" id="name" placeholder="Customer Name">
+
+<input type="tel" id="mobile" placeholder="Mobile Number">
+
+<select id="orderType" onchange="toggleAddress()">
+<option value="Take Away">Take Away</option>
+<option value="Delivery">Delivery</option>
+</select>
+
+<div id="addressBox" style="display:none;">
+
+<textarea id="address"
+placeholder="Enter Delivery Address"></textarea>
+
+</div>
+
+<br><br>
+
+<button class="btn" onclick="sendWhatsApp()">
+Place Order on WhatsApp
+</button>
+
+</div>
+
+<script src="js/cart.js"></script>
+
+</body>
+</html>
