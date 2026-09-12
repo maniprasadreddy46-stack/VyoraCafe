@@ -123,7 +123,7 @@ function sendWhatsApp() {
 
     message += "%0A💰 *Grand Total : ₹" + total + "*";
 
-    const phone = "916305569311";
+    const phone = "919182543358";
 
     window.open(
         "https://wa.me/" + phone + "?text=" + message,
